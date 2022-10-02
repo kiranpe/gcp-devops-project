@@ -1,6 +1,6 @@
 # gcp-devops-project
 
---> In this project we are going to use GCP(Kubernetes Engine), Terraform, Argo CD, Helm, Docker, EFK, Ansible, Promethus, Grafana, Jenkins, Python and Shell Script!!
+--> In this project we are going to use GCP(Kubernetes Engine), Terraform, Argo CD, Helm, Docker, EFK, Ansible, Promethus, Grafana, JFrog, Jenkins, Python and Shell Script!!
 
 --> Everyweek I am going to add my learnings on each tool and technologies!!
 
