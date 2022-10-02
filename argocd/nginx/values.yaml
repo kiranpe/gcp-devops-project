@@ -1,0 +1,10 @@
+dnsPolicy: "ClusterFirst"
+restartPolicy : "Always"
+port: 8080
+protocol: "TCP"
+type: "LoadBalancer"
+
+image:
+  name: kiranp23/studentsproject
+  pullPolicy: Always
+  tag: latest
