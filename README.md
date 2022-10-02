@@ -28,7 +28,7 @@ GKE Cluster:
 
     As I said earilier, this will create GKE custer and Argo CD. 
   
-    V.Imp Note: Please edit argocd-server service file and change it to "Loadbalancer" to access UI!!
+    V.Imp Note: Please edit argocd-server service file and change it to "Loadbalancer" to access UI using Loadbalcer IP!!
 
 Argo CD Deployment:
 ------------------
