@@ -39,4 +39,5 @@ Argo CD Deployment:
           cd argocd/
           kubectl apply -f gcp-application.yaml
 
-    This will deploy a simple webapp. you can access it by using your loadbalancer IP. http://<LoadBalancer IP/EXTERNAL IP>:8080/studentsinfo
+    This will deploy a simple webapp. you can access it by using your loadbalancer IP.
+    Url: http://<LoadBalancer IP/EXTERNAL IP>:8080/studentsinfo
