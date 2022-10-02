@@ -46,3 +46,5 @@ Argo CD Deployment:
     Url: http://<LoadBalancer IP/EXTERNAL IP>:8080/studentsinfo
 
     Note: Remove your webapp application first in GKE Cluster and then destroy cluster!!
+
+    Command: kubectl delete -f gcp-application.yaml
