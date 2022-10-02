@@ -1,10 +1,16 @@
 # gcp-devops-project
 
+--> In this project we are going to use GCP(Kubernetes Engine), Terraform, Argo CD, Helm, Docker, EFK, Ansible, Promethus, Grafana, Jenkins, Python and Shell Script!!
+
+--> Everyweek I am going to add my learnings on each tool and technologies!!
+
 GKE Cluster:
 ------------
---> I am using gke cluster to deploy my docker image.
+--> I am using gke cluster to deploy my simple webapp docker image.
 
---> I have added terraform code to create GKE cluster, install ArgoCD on top of it and state bucket to store terraform state file in remote location.
+--> I have added terraform code to create GKE cluster, install ArgoCD on top of it and state bucket code to store terraform state file in remote location.
+
+--> Also I am using helm to deploy my web application in Argo CD.
 
 --> Imp: Run "gcloud auth application-default login" to set up logins.
 
