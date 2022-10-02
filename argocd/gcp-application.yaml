@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx
+  name: webapp
   namespace: argocd
 spec:
   destination:
     namespace: 'apps'
     server: 'https://kubernetes.default.svc'
   source:
-    path: 'nginx'
-    repoURL: 'https://github.com/kiranpe/argocd.git'
+    path: 'argocd/webapp'
+    repoURL: 'https://github.com/kiranpe/gcp-devops-project.git'
     targetRevision: HEAD
   project: default
   syncPolicy:

@@ -12,7 +12,31 @@ GKE Cluster:
     
     Commands:
           cd state_bucket/
-          terraform init
-          run plan: terraform plan -var-file=values.tfvars
-          apply to create stack: terraform apply -auto-approve -var-file=values.tfvars
-          run destroy to delete stack: terraform destroy -auto-approve -var-file=values.tfvars
+          Run init: terraform init
+          Run plan: terraform plan -var-file=values.tfvars
+          Run apply to create stack: terraform apply -auto-approve -var-file=values.tfvars
+          Run destroy to delete stack: terraform destroy -auto-approve -var-file=values.tfvars
+
+--> Now create GKE Cluster
+
+    Commands:
+          cd gke-cluster/
+          Run init to intialize backend: terraform init -backend-config=backend.config
+          Run plan: terraform plan -var-file=values.tfvars
+          Run apply to create stack: terraform apply -auto-approve -var-file=values.tfvars
+          Run destroy to delete stack: terraform destroy -auto-approve -var-file=values.tfvars 
+
+    As I said earilier, this will create GKE custer and Argo CD. 
+  
+    V.Imp Note: Please edit argocd-server service file and change it to "Loadbalancer" to access UI!!
+
+Argo CD Deployment:
+------------------
+
+--> Once you are done with cluster creation, deploy nginx application.
+
+    Commands:
+          cd argocd/
+          kubectl apply -f gcp-application.yaml
+
+    This will deploy a simple webapp. you can access it by using your loadbalancer IP. http://<LoadBalancer IP/EXTERNAL IP>:8080/studentsinfo
