@@ -41,3 +41,5 @@ Argo CD Deployment:
 
     This will deploy a simple webapp. you can access it by using your loadbalancer IP.
     Url: http://<LoadBalancer IP/EXTERNAL IP>:8080/studentsinfo
+
+    Note: Remove your webapp application first in GKE Cluster and then destroy cluster!!
