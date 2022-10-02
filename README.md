@@ -38,7 +38,7 @@ GKE Cluster:
 Argo CD Deployment:
 ------------------
 
---> Once you are done with cluster creation, deploy nginx application.
+--> Once you are done with cluster creation, deploy a simple web application.
 
     Commands:
           cd argocd/
