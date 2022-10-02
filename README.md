@@ -25,6 +25,9 @@ GKE Cluster:
           Run plan: terraform plan -var-file=values.tfvars
           Run apply to create stack: terraform apply -auto-approve -var-file=values.tfvars
           Run destroy to delete stack: terraform destroy -auto-approve -var-file=values.tfvars 
+  
+          Command To get ArgoCD Secret:
+             kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 
     As I said earilier, this will create GKE custer and Argo CD. 
   
