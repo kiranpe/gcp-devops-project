@@ -31,7 +31,7 @@ GKE Cluster:
 
     As I said earilier, this will create GKE custer and Argo CD. 
   
-    V.Imp Note: Please edit argocd-server service file and change it to "Loadbalancer" to access UI using Loadbalcer IP!!
+    V.Imp Note: Please edit argocd-server service file and change it to "LoadBalancer" to access UI using Loadbalancer IP!!
 
 Argo CD Deployment:
 ------------------
@@ -45,6 +45,6 @@ Argo CD Deployment:
     This will deploy a simple webapp. you can access it by using your loadbalancer IP.
     Url: http://<LoadBalancer IP/EXTERNAL IP>:8080/studentsinfo
 
-    Note: Remove your webapp application first in GKE Cluster and then destroy cluster!!
+    Note: Remove your webapp application first in GKE Cluster and also check if any loadbalancer is running and then destroy cluster!!
 
     Command: kubectl delete -f gcp-application.yaml
